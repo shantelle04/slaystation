@@ -66,3 +66,4 @@ $user_details = [
 <pre>
     <?php print_r($user_details); ?>
 </pre>
+4

@@ -35,3 +35,18 @@ for($n=14; $n<24; $n+2){
     print $r . "br";
 }
 ?>
+<h4>foreach</h4>
+<?php
+//foreach
+
+$months = ["Jan","Feb","March","April","May","June","July","Aug","Sep","Oct","Nov","Dec"];
+
+foreach($months AS $month){
+    ?>
+    <option value =""><?php print $month; ?></option>
+    <?php
+}
+?>
+</select>
+<select name ="" id="">
+    <?php
