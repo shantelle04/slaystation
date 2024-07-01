@@ -1,3 +1,7 @@
+<?php
+require_once("")
+include_once("Templates/index.php")
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -88,3 +92,4 @@
     </footer>
 </body>
 </html>
+
