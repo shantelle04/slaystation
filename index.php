@@ -38,7 +38,7 @@
             <div class="row">
            <div class="Purchase" style="width:300px">
             <img src="images/f1.jpeg" alt="">
-            <h4 class="Purchase"></h4>
+            <h4 class="Purchase">Add to cart</h4>
             <div class="Purchase-body">
               <p class="Purchase-text">Thanks for choosing us! Let us know if you have any questions along the way.
             </p>
@@ -47,28 +47,25 @@
           </div>
 
          
-           <div class="card" style="width:300px">
-            <img src="images/realtor3.jpeg" alt="">
-            <div class="card-body">
-                <h4 class="card-title">finding an eXps </h4>
-              <p class="card-text">Whether you are looking to buy, sell or rent, our experienced and passionate<br>
-                agents are on hand to help make it happen. Find the perfect agent for your needs today!   
+           <div class="Purchase" style="width:300px">
+            <img src="images/f2.jpeg" alt="">
+            <div class="Purchase-body">
+                <h4 class="Purchase-title">Head to checkout</h4>
+              <p class="Purchase-text">Find items at your convinience  
             </p>
-              <a href="agent.php" class="btn btn-primary">find an agent</a>
+              <a href="order.php" class="btn btn-primary">One click away</a>
             </div>
           </div>
 
          
-           <div class="card" style="width:300px">
-            <img src="images/money4.jpeg" alt="" >
-            <div class="card-body">
-                <h4 class="card-title">cash offers</h4>
-              <p class="card-text">Discover how you can get cash offers quickly on your home without staging or listing <br>
-                . Our Express Offers platform easily connects individual home owners with investors <br>
-                
+           <div class="Purchase" style="width:300px">
+            <img src="images/f3.jpeg" alt="" >
+            <div class="Purchase-body">
+                <h4 class="Purchase-title">add payment method</h4>
+              <p class="Purchase-text">Add your  preffered method of payment
                
             </p>
-              <a href="payment.php" class="btn btn-primary">Get A Cash Offer</a>
+              <a href="order.php" class="btn btn-primary">One click away</a>
             </div>
           </div>
 
@@ -77,41 +74,41 @@
            <div class = "container">
             <div class = "row">
 
-           <h4>HOUSE DETAILS AND BUYING PRICE:</h4>
+           <h4>Product details  </h4>
 
            <table class = "table table-stripped table-border" cellpadding ="border:3px" style = "border:1px solid !important;
            border-collapse:collapse;">
             <tr>
                  
-                <th>type of house</th>
-                <th>location</th>
-                <th>bedrooms</th>
+                <th>type of product</th>
                 <th>price</th>
+                <th>reviews </th>
+                
             </tr>
             <tr>
-                <td>Mansion</td>
-                <td>Lower kabete</td>
-                <td>6</td>
-                <td>149,000,000</td>
+                <td>Shower Gel</td>
+                <td>600</td>
+                <td>5star</td>
+                
     
             </tr>
             <tr>
-                <td>Apartments</td>
-                <td>westlands</td>
-                <td>2</td>
-                <td>12,000,000</td>
+                <td>Headphones</td>
+                <td>3500</td>
+                <td>3star</td>
+                
             </tr>
             <tr>
-                <td>Townhome</td>
-                <td>parklands</td>
-                <td>3</td>
-                <td>20,000,000</td>
+                <td>Dumbells</td>
+                <td>7000</td>
+                <td>4star</td>
+                
             </tr>
             <tr>
-                <td>Bungalow</td>
-                <td>Kitusuru</td>
-                <td>5</td>
-                <td>100,000,000</td>
+                <td>Showl</td>
+                <td>500</td>
+                <td>6star</td>
+               
             </tr>
 
            </table>
@@ -119,4 +116,4 @@
         </div>
        </div>
 
-       <?php include_once("templates/footer.php"); ?>
+       <?php include_once("Templates/footer.php"); ?>
