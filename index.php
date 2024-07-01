@@ -34,7 +34,7 @@
            </ul>
 
 
-            <div class="container">
+           <div class="container">
             <div class="row">
            <div class="Purchase" style="width:300px">
             <img src="images/f1.jpeg" alt="">
@@ -116,4 +116,4 @@
         </div>
        </div>
 
-       <?php include_once("Templates/footer.php"); ?>
+       <?php include_once("Templates/footer.php"); ?> 
