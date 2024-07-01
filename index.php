@@ -1,95 +1,114 @@
-<?php
-require_once("")
-include_once("Templates/index.php")
-?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lumina| 90s $ dangerous</title>
-  <link rel="stylessheet" href="CSS/styles.css">
-  <style>
- body{
-    background-image: url(images/download\ \(5\).jpeg);
-    background-size: cover; 
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh;
-    margin: 0%;
-    padding: 0%;
-    font-family:'Times New Roman';
-    font-size: large;
- }
-  /* Style for the container */
-  .container{
-    text-align: center;
-    text-decoration: double;
-    padding: 100px 0;
-    color: rgb(109, 107, 107);
-  }
-  /* Styles for the content */
-  h1 {
-            font-size: 48px;
-            background-color:transparent; 
-            margin: 0; 
-        }
+<?php include_once ("Templates/header.php"); ?>
+<?php include_once ("Templates/nav.php"); ?>
+<?php include_once ("Templates/drop.php"); ?>
+   
+<div class="banner">
+    <h1>HomePage</h1>
+</div>
 
-        p {
-            font-size: 24px;
-            background-color: transparent; 
-            margin: 0; /* Remove any default margin */
-        }
+<div  class="row">
+    <div class="content">
 
-        footer {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            background-color:transparent; 
-            color:rgb(57, 55, 55); 
-            text-align: center;
-            padding: 10px 0;
-        }
+    <p>Welcome to ClickCart, your one-stop shop for ALL your needs. We're passionate about curating a collection of high-quality products that cater to your unique needs and style. Explore our latest arrivals, discover special offers, and enjoy a seamless shopping experience from the comfort of your own home. We're committed to providing exceptional customer service and ensuring your satisfaction every step of the way. Start browsing now and find your perfect pieces!</p>
 
-        nav {
-            background-color:rgb(0, 0, 0); 
-            padding: 20px;
-            text-align: center;
-        }
-
-        nav ul {
-            list-style-type: georgian;
-            margin: 0;
-            padding: 0;
-        }
-
-        nav ul li {
-            display:inline;
-            margin-right: 10px;
-        }
-
-        nav ul li a {
-            color: rgb(109, 107, 107);
-            text-decoration: wavy;
-        }
-    </style>
+        <image width="550" height="450">
+            <img src="images
+           
+</images>
     
-</head>
-<body>
-  
+           <h4>Houses on the list;</h4>
+           <ul>
+            <li>Bungalow</li>
+            <li>Mansion</li>
+            <li>Apartment</li>
+            <li>Townhome</li>
+           </ul>
 
-    <!-- Content for the home page -->
-    <div class="container">
-        <h1>Lumina. Time to time travel</h1>
-        <p>90s $ Dangerous </p>
-       
-    </div>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; Lumina. All rights reserved.</p>
-    </footer>
-</body>
-</html>
+            <div class="container">
+            <div class="row">
+           <div class="card" style="width:300px">
+            <img src="images/key.jpeg" alt="">
+            <h4 class="card-title">selling your home</h4>
+            <div class="card-body">
+              <p class="card-text">Buying a home is one of the most important decisions you will make,<br>
+                 and our local experts at eXp Realty are here to make the process as easy as possible.
+            </p>
+              <a href="selling.php" class="btn btn-primary">find your home</a>
+            </div>
+          </div>
 
+         
+           <div class="card" style="width:300px">
+            <img src="images/realtor3.jpeg" alt="">
+            <div class="card-body">
+                <h4 class="card-title">finding an eXps </h4>
+              <p class="card-text">Whether you are looking to buy, sell or rent, our experienced and passionate<br>
+                agents are on hand to help make it happen. Find the perfect agent for your needs today!   
+            </p>
+              <a href="agent.php" class="btn btn-primary">find an agent</a>
+            </div>
+          </div>
+
+         
+           <div class="card" style="width:300px">
+            <img src="images/money4.jpeg" alt="" >
+            <div class="card-body">
+                <h4 class="card-title">cash offers</h4>
+              <p class="card-text">Discover how you can get cash offers quickly on your home without staging or listing <br>
+                . Our Express Offers platform easily connects individual home owners with investors <br>
+                
+               
+            </p>
+              <a href="payment.php" class="btn btn-primary">Get A Cash Offer</a>
+            </div>
+          </div>
+
+        
+          
+           <div class = "container">
+            <div class = "row">
+
+           <h4>HOUSE DETAILS AND BUYING PRICE:</h4>
+
+           <table class = "table table-stripped table-border" cellpadding ="border:3px" style = "border:1px solid !important;
+           border-collapse:collapse;">
+            <tr>
+                 
+                <th>type of house</th>
+                <th>location</th>
+                <th>bedrooms</th>
+                <th>price</th>
+            </tr>
+            <tr>
+                <td>Mansion</td>
+                <td>Lower kabete</td>
+                <td>6</td>
+                <td>149,000,000</td>
+    
+            </tr>
+            <tr>
+                <td>Apartments</td>
+                <td>westlands</td>
+                <td>2</td>
+                <td>12,000,000</td>
+            </tr>
+            <tr>
+                <td>Townhome</td>
+                <td>parklands</td>
+                <td>3</td>
+                <td>20,000,000</td>
+            </tr>
+            <tr>
+                <td>Bungalow</td>
+                <td>Kitusuru</td>
+                <td>5</td>
+                <td>100,000,000</td>
+            </tr>
+
+           </table>
+
+        </div>
+       </div>
+
+       <?php include_once("templates/footer.php"); ?>
