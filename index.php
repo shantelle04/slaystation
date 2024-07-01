@@ -9,32 +9,40 @@
 <div  class="row">
     <div class="content">
 
-    <p>Welcome to ClickCart, your one-stop shop for ALL your needs. We're passionate about curating a collection of high-quality products that cater to your unique needs and style. Explore our latest arrivals, discover special offers, and enjoy a seamless shopping experience from the comfort of your own home. We're committed to providing exceptional customer service and ensuring your satisfaction every step of the way. Start browsing now and find your perfect pieces!</p>
+    <p>Welcome to ClickCart, your one-stop shop for ALL your needs. We're passionate about curating a collection of high-quality products that cater to your unique needs and style <br>
+    . Explore our latest arrivals, discover special offers, and enjoy a seamless shopping experience from the comfort of your own home.<br>
+     We're committed to providing exceptional customer service and ensuring your satisfaction every step of the way. Start browsing now and find your perfect pieces!</p>
 
-        <image width="550" height="450">
-            <img src="images
+        <img width="550" height="450">
+            <img src="images/f1.jpeg">
+
+        <img width="550" height="450">
+            <img src="images/f2.jpeg">
+
+         <img width="550" height="450">
+            <img src="images/f3.jpeg">
+            
            
 </images>
     
-           <h4>Houses on the list;</h4>
+           <h4>Categories of products;</h4>
            <ul>
-            <li>Bungalow</li>
-            <li>Mansion</li>
-            <li>Apartment</li>
-            <li>Townhome</li>
+            <li>Health and Beauty</li>
+            <li>Home and Office</li>
+            <li>Sporting Goods</li>
+            <li>Garden and Outdoors</li>
            </ul>
 
 
             <div class="container">
             <div class="row">
-           <div class="card" style="width:300px">
-            <img src="images/key.jpeg" alt="">
-            <h4 class="card-title">selling your home</h4>
-            <div class="card-body">
-              <p class="card-text">Buying a home is one of the most important decisions you will make,<br>
-                 and our local experts at eXp Realty are here to make the process as easy as possible.
+           <div class="Purchase" style="width:300px">
+            <img src="images/f1.jpeg" alt="">
+            <h4 class="Purchase"></h4>
+            <div class="Purchase-body">
+              <p class="Purchase-text">Thanks for choosing us! Let us know if you have any questions along the way.
             </p>
-              <a href="selling.php" class="btn btn-primary">find your home</a>
+              <a href="order.php" class="btn btn-primary">One click away</a>
             </div>
           </div>
 
