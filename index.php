@@ -1,119 +1,123 @@
-<?php include_once ("Templates/header.php"); ?>
-<?php include_once ("Templates/nav.php"); ?>
-<?php include_once ("Templates/drop.php"); ?>
-   
-<div class="banner">
-    <h1>HomePage</h1>
-</div>
+<!DOCTYPE html>
+<html>
+<head>
+<a href="../LANDINGPAGE/index.php">
+    <img src="home.png" alt="Home" />
+</a>
+    <title>LOGIN</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
 
-<div  class="row">
-    <div class="content">
+        .form-container {
+            max-width: 400px;
+            margin: 0 auto;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            border-radius: 5px;
+        }
 
-    <p>Welcome to ClickCart, your one-stop shop for ALL your needs. We're passionate about curating a collection of high-quality products that cater to your unique needs and style <br>
-    . Explore our latest arrivals, discover special offers, and enjoy a seamless shopping experience from the comfort of your own home.<br>
-     We're committed to providing exceptional customer service and ensuring your satisfaction every step of the way. Start browsing now and find your perfect pieces!</p>
+        .form-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
 
-        <img width="550" height="450">
-            <img src="images/f1.jpeg">
+        .form-container label {
+            font-size: 16px;
+            font-weight: bold;
+        }
 
-        <img width="550" height="450">
-            <img src="images/f2.jpeg">
+        .form-container select,
+        .form-container input[type="text"],
+        .form-container input[type="password"] {
+            width: 95%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+        }
 
-         <img width="550" height="450">
-            <img src="images/f3.jpeg">
+        .form-container .error {
+            color: red;
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+
+        .form-container button {
+            background-color: #088F8F;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            margin-right: 10px;
+        }
+
+        .form-container button a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .form-container button[type="submit"] {
+            float: left;
+        }
+
+        .form-container button[type="submit"]:hover {
+            background-color: #077F7F;
+        }
+
+        .form-container button[type="button"] {
+            float: right;
+            background-color: #ccc;
+        }
+
+        .form-container button[type="button"]:hover {
+            background-color: #077F7F;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>LOGIN</h2>
+        <?php
+            // Check if a user is logged in
+            session_start();
+            if (isset($_SESSION['username'])) {
+                echo '<p>Welcome, ' . $_SESSION['username'] . '!</p>';
+            }
+        ?>
+        <form name="loginForm" method="POST" action="login.php">
+            <label>Select a role</label><br><br>
+            <select name="option">
+                <option value="admin">ADMIN</option>
+                <option value="patient">Patient</option>
+                <option value="doctor">Doctor</option>
+                <option value="pharmacist">Pharmacist</option>
+                <option value="pharmaceutical_company">Pharmaceutical Company</option>
+            </select><br>
             
-           
-</images>
-    
-           <h4>Categories of products;</h4>
-           <ul>
-            <li>Health and Beauty</li>
-            <li>Home and Office</li>
-            <li>Sporting Goods</li>
-            <li>Garden and Outdoors</li>
-           </ul>
 
+            <?php if (isset($_GET['error'])) { ?>
+                <p class='error'><?php echo $_GET['error']; ?></p>
+            <?php } ?>
 
-           <div class="container">
-            <div class="row">
-           <div class="Purchase" style="width:300px">
-            <img src="images/f1.jpeg" alt="">
-            <h4 class="Purchase">Add to cart</h4>
-            <div class="Purchase-body">
-              <p class="Purchase-text">Thanks for choosing us! Let us know if you have any questions along the way.
-            </p>
-              <a href="order.php" class="btn btn-primary">One click away</a>
-            </div>
-          </div>
+            <label>User ID</label>
+            <input type="text" name="uname" placeholder="User id" autocomplete="off"><br>
+            <label>User Password</label>
+            <input type="password" name="password" placeholder="Password" autocomplete="off"><br>
 
-         
-           <div class="Purchase" style="width:300px">
-            <img src="images/f2.jpeg" alt="">
-            <div class="Purchase-body">
-                <h4 class="Purchase-title">Head to checkout</h4>
-              <p class="Purchase-text">Find items at your convinience  
-            </p>
-              <a href="order.php" class="btn btn-primary">One click away</a>
-            </div>
-          </div>
+            <button type="submit">Login</button>
+            
+        </form>
+       
+        <a href="register.php"><button>Sign Up</button></a>
+    </div>
 
-         
-           <div class="Purchase" style="width:300px">
-            <img src="images/f3.jpeg" alt="" >
-            <div class="Purchase-body">
-                <h4 class="Purchase-title">add payment method</h4>
-              <p class="Purchase-text">Add your  preffered method of payment
-               
-            </p>
-              <a href="order.php" class="btn btn-primary">One click away</a>
-            </div>
-          </div>
-
-        
-          
-           <div class = "container">
-            <div class = "row">
-
-           <h4>Product details  </h4>
-
-           <table class = "table table-stripped table-border" cellpadding ="border:3px" style = "border:1px solid !important;
-           border-collapse:collapse;">
-            <tr>
-                 
-                <th>type of product</th>
-                <th>price</th>
-                <th>reviews </th>
-                
-            </tr>
-            <tr>
-                <td>Shower Gel</td>
-                <td>600</td>
-                <td>5star</td>
-                
-    
-            </tr>
-            <tr>
-                <td>Headphones</td>
-                <td>3500</td>
-                <td>3star</td>
-                
-            </tr>
-            <tr>
-                <td>Dumbells</td>
-                <td>7000</td>
-                <td>4star</td>
-                
-            </tr>
-            <tr>
-                <td>Showl</td>
-                <td>500</td>
-                <td>6star</td>
-               
-            </tr>
-
-           </table>
-
-        </div>
-       </div>
-
-       <?php include_once("Templates/footer.php"); ?> 
+</body>
+</html>
