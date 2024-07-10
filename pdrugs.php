@@ -73,7 +73,7 @@
     </tr>
 
     <?php
-        include "db_conn.php";
+        include_once "DBConnection.php";
         $sqll = "SELECT * FROM Drug_E_Dispensing.Pdrugs";
         $resultt = mysqli_query($conn , $sqll);
 
