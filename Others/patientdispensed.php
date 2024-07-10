@@ -1,6 +1,6 @@
 <nav>
 <?php 
-include 'db_conn.php';
+include_once 'DBConnection.php';
 session_start();
 $Id=$_SESSION['userId'];
 $select="SELECT FirstName,LastName FROM patient WHERE userId=$Id;";
@@ -20,7 +20,7 @@ $lname=$row['LastName'];
 </nav><br>
 <?php
 
-if (isset($_SESSION['userPass']) && isset($_SESSION['userId'])) {
+if (isset($_SESSION['userPass']) && isset($_SESSION['userIdz'])) {
     include "db_conn.php";
 
     // Check if a search query is provided
