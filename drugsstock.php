@@ -74,7 +74,7 @@
     </tr>
 
     <?php
-        include "db_conn.php";
+        
         $sqll = "SELECT * FROM Drug_E_Dispensing.drugstock";
         $resultt = mysqli_query($conn , $sqll);
 
