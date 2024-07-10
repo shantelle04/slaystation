@@ -1,7 +1,7 @@
 <nav>
     <?php 
     session_start();
-    include 'db_conn.php';
+    include_once 'DBConnection.php';
     $doctorId=$_SESSION['userId'];
 
 $select="SELECT * FROM doctor WHERE userId=$doctorId";

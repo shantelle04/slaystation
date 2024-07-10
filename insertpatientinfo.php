@@ -1,6 +1,6 @@
 <nav>
 <?php 
-include 'db_conn.php';
+include_once ("DBConnection.php");
 session_start();
 $Id=$_SESSION['userId'];
 $select="SELECT FirstName,LastName FROM patient WHERE userId=$Id;";
