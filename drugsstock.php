@@ -87,7 +87,7 @@
                 $drugCategory= $row['drugCategory'];
                 $stock= $row['stock'];
 
-                echo '<tr> 
+                echo 'pp<tr> 
                         <td>'.$drugId.'</td>
                         <td>'.$drugName.'</td>
                         <td>'.$drugManufacturer.'</td>
