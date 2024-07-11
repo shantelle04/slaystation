@@ -49,7 +49,7 @@
 session_start();
 
 if (isset($_SESSION['userPass']) && isset($_SESSION['userId'])) {
-    include "db_conn.php";
+    include_once "DBConnection.php";
     $userId = $_SESSION['userId'];
 
     $sqli = "SELECT * FROM patientinfo WHERE userId='$userId'";
